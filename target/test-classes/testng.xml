@@ -2,25 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "My first suite" configfailurepolicy="continue" parallel="tests" verbose="2" preserve-order="false" thread-count="2" >
 
-    <parameter name="stringA" value="I hate"/>
-    <parameter name="stringB" value=" bugs"/>
     <parameter name="browser" value="chrome"/>
 
-    <test name ="My first test" >
+    <test name ="Amazon tests" >
         <classes>
-            <class name = "com.automation.uitests.AutomationTest"/>
+            <class name = "com.automation.uitests.AmazonTests"/>
         </classes>
     </test>
 
-    <test name ="WikiTests" >
-        <classes>
-            <class name = "com.automation.uitests.WikiTests"/>
-        </classes>
-    </test>
-
-    <test name ="WikiTestsEs" >
-        <classes>
-            <class name = "com.automation.uitests.WikiTestsEs"/>
-        </classes>
-    </test>
 </suite>
